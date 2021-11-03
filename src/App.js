@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from 'axios';
 import "./App.css";
-import Photo from './Image';
+import Photo from './Image.js';
 import {BASE_URL, API_KEY} from './index.js';
 function App() {
   const [nasaData, setNasaData] = useState(null)
