@@ -1,13 +1,14 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import './Image.css'
 
-export default function Photo(props) {
+export default function Image (props) {
    
-    const {pic, title} = props ;
+    const {nasaImg, nasaTitle} = props ;
     return(
         <div className = "nasa-container">
-            <h2>{props.title}</h2>
-            <img src ={props.url} alt ="nasa photo of the day"/>
+            <img src= {nasaImg} width = '500px' height = '300px'/>
+            <h2>{nasaTitle}</h2>
+
         </div>
     );
      
